@@ -1,0 +1,159 @@
+body {
+  background-image: url(https://cdn.firstcrycdn.com/2018/08/512099746-H.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+.container {
+  margin: 10px;
+/*   border: 2px solid blue; */
+  padding: 10px;
+  display: block;
+}
+
+#firstsentence {
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-image: url("http://clipart-library.com/images/pi5yo5Mi9.png");
+  background-size: 1000px 70px;
+  background-color: brown;
+  height: 70px;
+}
+
+h1,
+li {
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.head,
+.headbox {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin: 0px;
+
+  font-weight: bold;
+  font-style: oblique;
+}
+
+#targetmenu {
+  padding-top: 50px;
+}
+h2,
+h3,
+p {
+  text-align: center;
+}
+h2 {
+  color: #cccccc;
+}
+
+.education,
+.nature,
+.animals,
+.sports,
+.summary,
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.educationcontent,
+.naturecontent,
+.animalscontent,
+.sportscontent {
+  width: 18%;
+  background-color: #cccccc;
+}
+.expandmenu,
+.headbox {
+  width: 45%;
+}
+
+.summary p {
+  height: 30%;
+  width: 50%;
+  overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
+  color: #cccccc;
+}
+#targetmenu p {
+  color: #cccccc;
+  font-size: 1.3em;
+  font-family: sans-serif;
+}
+.targetmenuclass {
+  float: right;
+}
+img {
+  padding-top: 10px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  padding: 20px;
+}
+
+th,
+td {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+ul.container li {
+  display: inline;
+  padding: 0 10px 0 10px;
+  font-size: 1.5em;
+}
+.container ul {
+  list-style: none;
+  overflow: hidden;
+  float: right;
+  align-content: stretch;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.subtitle {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.expandmenu h2:hover,
+a:hover,
+h3:hover {
+  color: blue;
+  background-color: green;
+}
+
+#happyscrolling {
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.footer p {
+  color: red;
+  font-size: 1.1em;
+}

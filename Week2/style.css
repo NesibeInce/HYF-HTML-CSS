@@ -1,0 +1,113 @@
+body,
+header,
+main,
+#grid-floats,
+#grid-flex,
+section,
+.grid-item {
+  /* border: 1px solid blue; */
+  padding: 20px;
+}
+/* to run away from wrong box sizing */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: skyblue;
+}
+
+#grid-floats {
+  /* after implementing float: display is modified, to get rid of that display:table is used */
+  display: table;
+}
+li {
+  list-style-type: none;
+}
+
+h1,
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 4px 4px 2px blue;
+  background-color: skyblue;
+}
+
+p {
+  padding: 15px;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+
+.grid-item {
+  width: 23%; /* because of the margin width is not 25%*/
+  margin: 1%;
+}
+
+.grid-item:nth-child(1) {
+  width: 48%; /* because of the margin width is not 50%*/
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+img:hover {
+  border: solid 6px red;
+  transition: border 1s;
+}
+.grid-item:hover {
+  background-color: rgba(255, 166, 0, 0.911);
+  transition: background-color 1s;
+}
+
+#grid-floats .grid-item {
+  float: left;
+  height: 550px;
+}
+
+#grid-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-item {
+    width: calc(94% / 3); /* for tablet view*/
+  }
+
+  .grid-item:nth-child(1) {
+    width: 48%;
+  }
+  .grid-item:nth-child(2) {
+    width: 48%;
+  }
+  
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    width: 48%; /* for mobile view*/
+  }
+
+  .grid-item:nth-child(1) {
+    width: 98%;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  
+  p {
+    font-size: 12px;
+    padding: 5px;
+  }
+}

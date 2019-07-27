@@ -11,11 +11,22 @@ body,
 }
 
 body {
-  width: 90%; /*ana body ortaya gelsin diye*/
+  width: 80%; /*ana body ortaya gelsin diye*/
   margin-left: auto; /*iki kenardan esit bosluk birakiyor*/
   margin-right: auto;
 }
 
+html {
+  background: repeating-linear-gradient(90deg, #fff, #fff 12.5%, #000 12.6%, #000 7px);
+}
+
+.topMenu p {
+  font-size: 15px !important;
+  width: 80%;
+}
+h2 {
+  font-weight: normal;
+}
 .hidden-menu1,
 .site-header,
 .showCase {

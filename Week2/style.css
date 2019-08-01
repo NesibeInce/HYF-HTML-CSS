@@ -43,12 +43,12 @@ h3 {
 }
 
 .grid-item {
-  width: 23%; /* because of the margin width is not 25%*/
+  width: calc((100% - 8%) / 4); /* because of the margin width is not 25%*/
   margin: 1%;
 }
 
 .grid-item:nth-child(1) {
-  width: 48%; /* because of the margin width is not 50%*/
+  width: 4calc((100% - 4%) / 2); /* because of the margin width is not 50%*/
 }
 
 img {
@@ -57,6 +57,9 @@ img {
   margin-right: auto;
   width: 70%;
 }
+.grid-item {
+  background-color: aqua;
+}
 
 img:hover {
   border: solid 6px red;
@@ -64,7 +67,7 @@ img:hover {
 }
 .grid-item:hover {
   background-color: rgba(255, 166, 0, 0.911);
-  transition: background-color 1s;
+  transition: background-color 2s;
 }
 
 #grid-floats .grid-item {
@@ -82,13 +85,11 @@ img:hover {
     width: calc(94% / 3); /* for tablet view*/
   }
 
-  .grid-item:nth-child(1) {
-    width: 48%;
-  }
+  .grid-item:nth-child(1),
   .grid-item:nth-child(2) {
-    width: 48%;
+    width: calc((100% - 4%) / 2);
   }
-  
+
   body {
     background-color: lightgreen;
   }
